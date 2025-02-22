@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertex-School Of Science</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/png" href="logo/logo_icon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <section class="contact-wrapper">
+        <div class="contact-info">
+            <a href="https://wa.me//+917907854877">
+              <i class="fa-solid fa-phone"></i>
+              <span>7907 854 877</span>
+            </a>
+            <a href="tel:+917034573412">
+              <i class="fa-solid fa-phone"></i>
+              <span>7034 5734 12</span>
+            </a>
+            <a href="mailto:vertexstudys@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+              <span>contact@vertexstudys.com</span>
+            </a>
+        </div>
+    
+        <div class="social-media">
+            <a href="https://www.facebook.com/share/1FYEdyVLd8/">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/vertex_studys/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me//+917907854877">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+      </section>
+    
+      <section class="nav-wrapper">
+        <div class="logo-wrapper">
+          <div class="vertex-logo">
+            <a href="./index.html">
+              <img src="./images/navbar_logo.png" alt="vertex-logo" />
+            </a>
+          </div>
+        </div>
+    
+        <!-- Hamburger Icon -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          ☰
+        </div>
+    
+        <!-- Desktop Navigation -->
+        <nav class="nav-item">
+          <a href="index.html" style="color: #ff0000;">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="courses.html">Courses</a>
+          <!-- <a href="teacher.html">Teach With Us</a> -->
+          <a href="contact.html">Contact</a>
+        </nav>
+    
+        <!-- Mobile Sliding Menu -->
+        <nav id="mobile-menu" class="mobile-nav">
+          <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="courses.html">Courses</a>
+          <!-- <a href="teacher.html">Teach With Us</a> -->
+          <a href="contact.html">Contact</a>
+
+          
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img src="images/slider/vertex_mainPoster.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScU7YybViYYbBC0kIAfrc99NPQnp93QPxmduflQtE-zUQs_BA/viewform?usp=header" target="_blank">
+              <img src="images/slider/vertex_mainPoster_2.png" alt="Slide 2">
+            </a>
+            </div>
+            <div class="slide">
+              <img src="images/slider/vertex_mainPoster_3.png" alt="Slide 3">
+            </div>
+            <div class="slide">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKWfqSdteB_745bgV06MCe3BQvhyQtqGECaiY5-4mJg7rJRw/viewform?usp=dialog" target="_blank">
+              <img src="images/slider/vertex_mainPoster_4.png" alt="Slide 4">
+            </a>
+            </div>
+            <div class="slide">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScfTRqVPphmlwHE6eEv27U-D0EXeBpn5hWjnh71zCFDrWg5Og/viewform?usp=header" target="_blank">
+              <img src="images/slider/vertex_mainPoster_5.png" alt="Slide 5">
+            </a>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+          <div class="about-image">
+            <img src="images/about_vertex.png" alt="About Image">
+          </div>
+          <div class="about-content">
+            <h1>About <br>VERTEX</h1>
+            <p>
+              We provide personalized, high-quality classes for all students, 
+              empowering them with expert teaching, tailored learning plans, 
+              and a supportive environment to build strong academic foundations and lifelong success.
+            </p>
+            <a href="about.html" class="read-more-btn">Read more →</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="popular-courses">
+        <div class="container">
+          <!-- <span class="badge">Top Courses</span> -->
+          <h2 class="title">Our Courses</h2>
+          <p class="description">
+            Embrace exceptional online education tailored for 10th and 12th grades in Kerala while also reaping the benefits 
+            of our offline classes. The sessions are led by seasoned and expert faculties, promising comprehensive 
+            learning experiences, catering to diverse student needs, and ensuring a well-rounded educational journey.
+          </p>
+        </div>
+      </section>
+      
+
+      <section class="course-cards">
+        <div class="card">
+          <img src="images/one.png" alt="State Syllabus 7-10" class="card-image" />
+          <h3 class="card-title">State Syllabus</h3>
+          <p class="card-subtitle">8,9,10</p>
+          <p class="card-description">Foundation and Tuition<br>For All Subjects</p>
+          <button class="card-button">Book Course</button>
+        </div>
+        <div class="card">
+          <img src="images/two.png" alt="State Syllabus +1,+2" class="card-image" />
+          <h3 class="card-title">State Syllabus</h3>
+          <p class="card-subtitle">+1,+2</p>
+          <p class="card-description">Online and Offline classes<br>Biology and Computer Science</p>
+          <button class="card-button">Book Course</button>
+        </div>
+        <div class="card">
+          <img src="images/three.png" alt="CBSE Syllabus 8-10" class="card-image" />
+          <h3 class="card-title">CBSE Syllabus</h3>
+          <p class="card-subtitle">8,9,10</p>
+          <p class="card-description">Regular tuition<br>Physics, Chemistry, Mathematics, Biology & Social Science</p>
+          <button class="card-button">Book Course</button>
+        </div>
+        <div class="card">
+          <img src="images/three.png" alt="Home Tution Syllabus 8-10" class="card-image" />
+          <h3 class="card-title">Home Tuition</h3>
+          <p class="card-subtitle">Std 1 - Std 12</p>
+          <p class="card-description">Regular Classes<br>For all Subjects</p>
+          <button class="card-button">Book Course</button>
+        </div>
+      </section>
+
+      <section class="achievements-section">
+        <h1>Academic Achievements 2023-24</h1>
+        <h2>PLUS ONE TOPPERS</h2>
+    
+        <div class="achievements-card-container">
+            <!-- Always Visible Cards -->
+            <div class="achievements-card">
+                <img src="images/winners/winner_1.png" alt="Student Photo">
+            </div>
+            <div class="achievements-card">
+                <img src="images/winners/winner_2.png" alt="Student Photo">
+            </div>
+            
+    
+            <!-- Hidden Cards (Initially Hidden) -->
+            <div class="achievements-card hidden">
+              <img src="images/update_soon.png" alt="Student Photo">
+          </div>
+          <div class="achievements-card hidden">
+              <img src="images/update_soon.png" alt="Student Photo">
+          </div>
+            <!-- <div class="achievements-card hidden">
+                <img src="images/update_soon.png" alt="Student Photo">
+            </div>
+            <div class="achievements-card hidden">
+                <img src="images/update_soon.png" alt="Student Photo">
+            </div>
+            <div class="achievements-card hidden">
+                <img src="images/update_soon.png" alt="Student Photo">
+            </div>
+            <div class="achievements-card hidden">
+                <img src="images/update_soon.png" alt="Student Photo">
+            </div> -->
+        </div>
+    
+        <div class="achievements-show-more">
+            <button id="showMoreBtn">Show more</button>
+        </div>
+    </section>
+    
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+          <!-- First Column: Logo -->
+          <div class="footer-column footer-logo">
+              <img src="logo/footer_logo.png" alt="Vertex Logo">
+              <p>Vertex Education Group</p>
+          </div>
+  
+          <!-- Second Column: Navigation Links -->
+          <div class="footer-column footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="courses.html">Admissions</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </div>
+  
+          <!-- Third Column: Contact and Social Media -->
+          <div class="footer-column footer-contact">
+              <h3>Contact Us</h3>
+              <p>Vertex Studys, 3rd floor</p>
+              <p>Municipality shopping complex </p>
+              <p>Market junction</p>
+              <p>Nedumangad</p>
+              <p>Email: contact@vertexstudys.com</p>
+              <p>Phone: 7907 854 877</p>
+              <br>
+              <h3>Follow Us</h3>
+              <div class="social-media-links">
+                <a href="https://www.facebook.com/share/1FYEdyVLd8/" class="social-icon">
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                </a>
+                <a href="https://www.youtube.com" class="social-icon">
+                    <i class="fa-brands fa-youtube" style="color: black;"></i>
+                </a>
+                <a href="https://www.instagram.com/vertex_studys/" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me//+917907854877" class="social-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>            
+          </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vertex Education. All rights reserved.</p>
+        <a class="designer" href="https://www.instagram.com/phoenix_digital_marketing_pvt/">
+        <p>Designed by <br>Phoenix Digital Marketing & Technology Pvt Ltd</p>
+      </a>
+    </div>
+    </footer>
+  
+
+    <!-- contact form -->
+    <div id="modal" class="modal">
+      <div class="modal-container">
+        <div class="modal-content">
+         
+          <button id="closeModal" class="close-button" aria-label="Close Modal">
+            &times;
+          </button>
+    
+         
+          <div class="image-container">
+            <img
+              src="./images/register_vertex_2.png"
+              alt="Company Banner"
+              class="image"
+            />
+          </div>
+    
+         
+          <div class="form-container">
+            <h2 class="form-title">Register</h2>
+    
+            <form id="registerForm">
+              
+              <input
+                type="text"
+                name="studentName"
+                placeholder="Student Name"
+                class="input-field"
+                id="student-name"
+              />
+              <span class="error-message" id="student-name-error"></span>
+    
+              <input
+                type="number"
+                name="studentMobile"
+                placeholder="Student Mobile"
+                class="input-field"
+                id="student-mobile"
+              />
+              <span class="error-message" id="student-mobile-error"></span>
+    
+              <input
+                type="number"
+                name="parentMobile"
+                placeholder="Parent Mobile"
+                class="input-field"
+                id="parent-mobile"
+              />
+              <span class="error-message" id="parent-mobile-error"></span>
+    
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="input-field"
+                id="email"
+              />
+              <span class="error-message" id="email-error"></span>
+    
+              <select name="class" class="select-field" id="class-select">
+                <option value="" disabled selected>Select Class</option>
+                <option value="8">8th</option>
+                <option value="9">9th</option>
+                <option value="10">10th</option>
+                <option value="11">+1</option>
+                <option value="12">+2</option>
+              </select>
+              <span class="error-message" id="class-select-error"></span>
+    
+              <select name="syllabus" class="select-field" id="syllabus-select">
+                <option value="" disabled selected>Select Syllabus</option>
+                <option value="cbse">CBSE</option>
+                <option value="kerala">Kerala State Board</option>
+                <option value="home">Home Tution</option>
+                <option value="medeng">Med / Engg Entrance</option>
+                <option value="eng">Vertex Entrance Test</option>
+              </select>
+              <span class="error-message" id="syllabus-select-error"></span>
+    
+              <button type="submit" class="submit-button" id="submit-button">
+               Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact form -->
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

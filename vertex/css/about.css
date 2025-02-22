@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-color: #3795bd; /* Green color */
+  --contact-color: #ff2d11;
+  --social-media: #1b8bf4;
+  --nav-bg: #ffffff;
+  --button: #4e31aa;
+  --button-hover: #3a1078;
+  --main-bg: rgba(248, 228, 192, 0.547);
+}
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.247);
+}
+
+/* CONTACT SECTION */
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  max-width: 100%;
+}
+
+.contact-info > a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-info > a > i {
+  color: var(--contact-color);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-media > a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.fa-facebook {
+  color: #1877f2;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.fa-instagram {
+  color: #f33a6a;
+}
+
+.fa-whatsapp {
+  color: #25d366;
+}
+
+/* NAVBAR */
+.nav-wrapper {
+  width: 100%;
+  min-height: 80px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--nav-bg);
+}
+
+.vertex-logo img {
+  width: 150px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* FIXED NAVIGATION */
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: white;
+  position: fixed; /* Keeps it at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  height: 60px; /* Set a fixed height for better visibility */
+}
+
+
+.vertex-logo img {
+  width: 150px;
+  height: 50px;
+  object-fit: contain;
+}
+/* DESKTOP NAV */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+  font-size: 16px; /* Adjust font size if needed */
+  padding: 10px 15px; /* Add padding for better spacing */
+}
+
+.nav-item a:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* HAMBURGER MENU */
+.hamburger-menu {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+}
+
+/* MOBILE SLIDING MENU */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Initially hidden */
+  width: 250px;
+  height: 100vh;
+  background-color: #5c45a9b4;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease-in-out;
+  z-index: 9999; /* Ensure it stays on top */
+}
+
+.mobile-nav a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s;
+}
+
+.mobile-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 878px) {
+  .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    justify-content: center;
+  }
+
+  .nav-item {
+    display: none; /* Hide desktop menu */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger */
+  }
+}
+
+/* Main container */
+main {
+  padding: 20px;
+}
+
+/* About Section */
+.about-wrapper {
+  background-color: var(--main-bg);
+  padding: 100px 20px;
+  border-radius: 15px;
+}
+
+.about-section {
+  padding: 50px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+/* Text Content */
+.about-content {
+  flex: 1;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-content > h1 {
+  font-size: 5em;
+  line-height: 78px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about-content > p {
+  max-width: 550px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding-top: 5px;
+}
+
+/* Image Styling */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  object-fit: cover;
+}
+
+/* Director Section */
+.about-dir {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.about-dir img {
+  width: 250px; /* Adjust size for smaller devices */
+  height: 250px; /* Keep it square for the circle */
+  object-fit: cover;
+  border-radius: 50%; /* Makes the image round */
+  aspect-ratio: 1/1;
+}
+
+.dir-info {
+  font-family: "Montserrat", sans-serif;
+}
+
+.dir-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dir-education,
+.dir-role {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d1d1d;
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+  .about-wrapper {
+    padding: 50px 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content > h1 {
+    font-size: 3em;
+    line-height: 1.2;
+  }
+
+  .about-content > p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .about-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .about-section:nth-child(odd) .about-container,
+  .about-section:nth-child(even) .about-container {
+    flex-direction: column;
+  }
+
+  .about-dir img {
+    width: 220px; /* Smaller size for mobile */
+    height: 220px;
+  }
+
+  .dir-name {
+    font-size: 20px;
+  }
+
+  .dir-education,
+  .dir-role {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content > h1 {
+    font-size: 2.5em;
+  }
+
+  .about-content > p {
+    font-size: 16px;
+  }
+
+  .about-dir img {
+    width: 180px; /* Even smaller for very small devices */
+    height: 180px;
+  }
+
+  .dir-name {
+    font-size: 18px;
+  }
+
+  .dir-education,
+  .dir-role {
+    font-size: 14px;
+  }
+}
+
+/* Edification section */
+.edification-section {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 50px 60px;
+  background-color: #fff;
+}
+
+.left-content,
+.right-content {
+  height: auto; /* Remove fixed height for responsiveness */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.left-content h1 {
+  font-size: 5em;
+  line-height: 78px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center; /* Center-align the h1 */
+  display: block; /* Ensure h1 is a block-level element */
+}
+
+.left-content h1 span {
+  display: inline-block; /* Use inline-block instead of block */
+  color: red;
+}
+
+.left-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.right-content h2 {
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+}
+
+.right-content p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.right-content h2:first-child {
+  margin-top: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 978px) {
+  .edification-section {
+    padding: 10px 20px; /* Reduce padding for smaller screens */
+  }
+
+  .right-content {
+    display: none; /* Hide right content on tablets */
+  }
+
+  .left-content {
+    height: auto; /* Remove fixed height */
+    padding: 20px 0; /* Add padding for better spacing */
+    text-align: center; /* Center-align text */
+  }
+
+  .left-content h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .left-content p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .edification-section {
+    padding: 10px 10px; /* Further reduce padding for mobile */
+  }
+
+  .left-content {
+    height: auto; /* Remove fixed height */
+    padding: 20px 0; /* Add padding for better spacing */
+    text-align: center; /* Center-align text */
+  }
+
+  .left-content h1 {
+    font-size: 2.5em; /* Smaller font size for mobile */
+    line-height: 1.2;
+  }
+
+  .left-content p {
+    font-size: 0.9em; /* Smaller font size for mobile */
+  }
+}
+
+/* Footer section */
+
+.site-footer {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #007bff;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-media-links .social-icon {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-media-links .social-icon:hover {
+  color: #007bff; /* Change to your preferred hover color */
+  transform: scale(1.2); /* Slight scaling effect on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links ul li a:hover {
+  color: var(--button-hover);
+}
+.designer {
+  text-decoration: none;
+  color: white;
+}
+.designer:hover {
+  color: rgb(255, 0, 0);
+}
