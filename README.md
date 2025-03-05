@@ -2,7 +2,8 @@
 
 This is the official website for Vertex School of Science, an educational institute dedicated to academic excellence. This project is my first freelance web development work, where I designed and built a fully functional, responsive website to showcase the institute’s programs, faculty, and admission details.
 
-Features
+Features:
+
 ✅ Modern and responsive design
 ✅ Information about courses and programs
 ✅ Faculty and staff details
